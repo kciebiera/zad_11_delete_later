@@ -1,6 +1,6 @@
 # Lab 11
 
-This lab 
+This lab serves as a basis for the theoretical part of the exam.
 
 ## Problem 1
 
