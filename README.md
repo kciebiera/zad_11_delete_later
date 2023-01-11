@@ -4,18 +4,20 @@ This lab serves as a basis for the theoretical part of the exam.
 
 ## Problem 1
 
-There are 8 subproblems of this problem
+There are 8 subproblems of this problem. You can find them in `task_1.py` file. You can run them by typing `python task_1.py <number>` where `<number>` is a number of subproblem. For instance if you want to run the first subproblem you should type `python task_1.py 1`.
 
 https://github.com/kciebiera/zad_11_delete_later/blob/234e9cd36e6215b0c9fb558fa6e3bd402c51baa1/task_1.py#L1-L66
 
-`task_1.py` program can generate eight different plots. For instance if you run `python task_1.py 3` (which is the third ):
 
 ![](Figure_3.png)
 
-Plots show base coordinate frame (dashed lines) and transformed frames (solid lines). You can zoom in, zoom out and so. Colors used
-are red - X, green - Y, blue - Z.
+Each of eight subproblems contains: 3D plot of base coordinate frame (dashed lines) and transformed frames (solid lines).
 
-For every of eight plots find a (4x4) transformation from base to transformed frames.
+You can zoom in, zoom out, move around 3D plot. Colors used follow RGB convention red is axis X, green is axis Y, and blue is axis Z.
+
+Your task is to find a transformation from base frame to transformed frame on paper.
+
+Take a look at program source code to find out what was the correct transformation.
 
 ## Problem 2
 
