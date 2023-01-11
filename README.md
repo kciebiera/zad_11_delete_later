@@ -4,11 +4,11 @@ This lab serves as a basis for the theoretical part of the exam.
 
 ## Problem 1
 
-There are 8 subtasks of this task
+There are 8 subproblems of this problem
 
 https://github.com/kciebiera/zad_11_delete_later/blob/234e9cd36e6215b0c9fb558fa6e3bd402c51baa1/task_1.py#L1-L66
 
-`task_1.py` program can generate eight different plots. For instance `task_1.py 3`:
+`task_1.py` program can generate eight different plots. For instance if you run `python task_1.py 3` (which is the third ):
 
 ![](Figure_3.png)
 
@@ -22,25 +22,35 @@ For every of eight plots find a (4x4) transformation from base to transformed fr
 Write a python program, that takes as an input:
 
 1. Series of transformations from base frame to end effector frame described by (4x4) matrices.
-2. Point cloud with respect to end effector frame (for instance this is a ball of radius 1 $x^2 + y^2 + z^2 <= 1$).
+2. Point cloud with respect to end effector frame.
 
 and produces a matplotlib 3D plot containing:
 
-1. All frames 
+1. All frames (labeled by number)
 2. Transformed point cloud
 
 For two matrices:
 
 ```
-[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
-[[ 2.22044605e-16 -1.00000000e+00  0.00000000e+00  0.00000000e+00]
- [ 1.00000000e+00  2.22044605e-16  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  0.00000000e+00  1.00000000e+00]]
+matrix_1 = [
+    [1, 0, 0, -2],
+    [0, 1, 0, 2],
+    [0, 0, 1, 1],
+    [0, 0, 0, 1]
+]
+
+matrix_2 = [
+    [ 1  0  0 -2],
+    [ 0  0  1  1],
+    [ 0 -1  0 -1],
+    [ 0  0  0  1]
+]
+
 ```
 
 and point cloud
 ```
+points = 
 [[ 0.5  0.   0. ]
  [-0.5  0.   0. ]
  [ 0.   0.5  0. ]
@@ -49,7 +59,13 @@ and point cloud
  [ 0.   0.  -0.5]]
 ```
 
-Output can be:
+Output of the function call 
+
+```
+plot_frames_and_points([matrix_1, matrix_2], points)
+```
+
+could be:
 
 ![](Figure_4.png)
 
