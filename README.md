@@ -4,4 +4,4 @@
 
 ## Problem 2
 
-(Description of task 2)[task_2.md]
+[Description of task 2](task_2.md)
